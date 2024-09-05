@@ -1,0 +1,302 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_to_do_list"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:39:5-44:15
+24        <intent>
+24-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:40:9-43:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:41:13-72
+25-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:41:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:42:13-50
+27-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:42:19-48
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:5-79
+31-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:26:22-76
+32    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+32-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/apple/.gradle/caches/transforms-3/2a1719f39327a1fbf0919f146a6d98f8/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+32-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/apple/.gradle/caches/transforms-3/2a1719f39327a1fbf0919f146a6d98f8/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+33
+34    <permission
+34-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+35        android:name="com.example.flutter_to_do_list.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.example.flutter_to_do_list.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+39
+40    <application
+41        android:name="android.app.Application"
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.9.0] /Users/apple/.gradle/caches/transforms-3/cd029caa73742c9274e432966ee47c8f/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+43        android:debuggable="true"
+44        android:icon="@mipmap/ic_launcher"
+45        android:label="fluttterapp" >
+46        <activity
+47            android:name="com.example.flutter_to_do_list.MainActivity"
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49            android:exported="true"
+50            android:hardwareAccelerated="true"
+51            android:launchMode="singleTop"
+52            android:taskAffinity=""
+53            android:theme="@style/LaunchTheme"
+54            android:windowSoftInputMode="adjustResize" >
+55
+56            <!--
+57                 Specifies an Android theme to apply to this Activity as soon as
+58                 the Android process has started. This theme is visible to the user
+59                 while the Flutter UI initializes. After that, this theme continues
+60                 to determine the Window background behind the Flutter UI.
+61            -->
+62            <meta-data
+63                android:name="io.flutter.embedding.android.NormalTheme"
+64                android:resource="@style/NormalTheme" />
+65
+66            <intent-filter>
+67                <action android:name="android.intent.action.MAIN" />
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+77            android:name="flutterEmbedding"
+78            android:value="2" />
+79
+80        <service
+80-->[:cloud_firestore] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+81            android:name="com.google.firebase.components.ComponentDiscoveryService"
+81-->[:cloud_firestore] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:32:13-43
+83            android:exported="false" >
+83-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:68:13-37
+84            <meta-data
+84-->[:cloud_firestore] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+85-->[:cloud_firestore] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:cloud_firestore] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+87            <meta-data
+87-->[:firebase_auth] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+88-->[:firebase_auth] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:firebase_auth] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+90            <meta-data
+90-->[:firebase_core] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+91-->[:firebase_core] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[:firebase_core] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:69:13-71:85
+94                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+94-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:70:17-109
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:71:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:17:13-19:85
+97                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+97-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:18:17-122
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:19:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:20:13-22:85
+100                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+100-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:21:17-111
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-firestore:24.11.0] /Users/apple/.gradle/caches/transforms-3/5ef635631732a64c978db132750effc7/transformed/jetified-firebase-firestore-24.11.0/AndroidManifest.xml:22:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-common-ktx:20.4.3] /Users/apple/.gradle/caches/transforms-3/5ba05adab6d608f3b61f11f9fa6bd207/transformed/jetified-firebase-common-ktx-20.4.3/AndroidManifest.xml:12:13-14:85
+103                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+103-->[com.google.firebase:firebase-common-ktx:20.4.3] /Users/apple/.gradle/caches/transforms-3/5ba05adab6d608f3b61f11f9fa6bd207/transformed/jetified-firebase-common-ktx-20.4.3/AndroidManifest.xml:13:17-116
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-common-ktx:20.4.3] /Users/apple/.gradle/caches/transforms-3/5ba05adab6d608f3b61f11f9fa6bd207/transformed/jetified-firebase-common-ktx-20.4.3/AndroidManifest.xml:14:17-82
+105            <meta-data
+105-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:35:13-37:85
+106                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+106-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:36:17-109
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:37:17-82
+108        </service>
+109        <!--
+110           Declares a provider which allows us to store files to share in
+111           '.../caches/share_plus' and grant the receiving action access
+112        -->
+113        <provider
+113-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:20
+114            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+114-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-77
+115            android:authorities="com.example.flutter_to_do_list.flutter.share_provider"
+115-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-74
+116            android:exported="false"
+116-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+117            android:grantUriPermissions="true" >
+117-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-47
+118            <meta-data
+118-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-22:68
+119                android:name="android.support.FILE_PROVIDER_PATHS"
+119-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:21:17-67
+120                android:resource="@xml/flutter_share_file_paths" />
+120-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-65
+121        </provider>
+122        <!--
+123           This manifest declared broadcast receiver allows us to use an explicit
+124           Intent when creating a PendingItent to be informed of the user's choice
+125        -->
+126        <receiver
+126-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-34:20
+127            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+127-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-82
+128            android:exported="false" >
+128-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-37
+129            <intent-filter>
+129-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+130                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+130-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-65
+130-->[:share_plus] /Users/apple/Desktop/TODO_app/fluttter-todo-app/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-62
+131            </intent-filter>
+132        </receiver>
+133
+134        <activity
+134-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:29:9-46:20
+135            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+135-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:30:13-80
+136            android:excludeFromRecents="true"
+136-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:31:13-46
+137            android:exported="true"
+137-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:32:13-36
+138            android:launchMode="singleTask"
+138-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:33:13-44
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+139-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:34:13-72
+140            <intent-filter>
+140-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:35:13-45:29
+141                <action android:name="android.intent.action.VIEW" />
+141-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:36:17-69
+141-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:36:25-66
+142
+143                <category android:name="android.intent.category.DEFAULT" />
+143-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:38:17-76
+143-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:38:27-73
+144                <category android:name="android.intent.category.BROWSABLE" />
+144-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:39:17-78
+144-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:39:27-75
+145
+146                <data
+146-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:42:13-50
+147                    android:host="firebase.auth"
+148                    android:path="/"
+149                    android:scheme="genericidp" />
+150            </intent-filter>
+151        </activity>
+152        <activity
+152-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:47:9-64:20
+153            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+153-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:48:13-79
+154            android:excludeFromRecents="true"
+154-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:49:13-46
+155            android:exported="true"
+155-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:50:13-36
+156            android:launchMode="singleTask"
+156-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:51:13-44
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+157-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:52:13-72
+158            <intent-filter>
+158-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:53:13-63:29
+159                <action android:name="android.intent.action.VIEW" />
+159-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:36:17-69
+159-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:36:25-66
+160
+161                <category android:name="android.intent.category.DEFAULT" />
+161-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:38:17-76
+161-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:38:27-73
+162                <category android:name="android.intent.category.BROWSABLE" />
+162-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:39:17-78
+162-->[com.google.firebase:firebase-auth:22.3.1] /Users/apple/.gradle/caches/transforms-3/23867a462b408e812cbb1476722320f0/transformed/jetified-firebase-auth-22.3.1/AndroidManifest.xml:39:27-75
+163
+164                <data
+164-->/Users/apple/Desktop/TODO_app/fluttter-todo-app/android/app/src/main/AndroidManifest.xml:42:13-50
+165                    android:host="firebase.auth"
+166                    android:path="/"
+167                    android:scheme="recaptcha" />
+168            </intent-filter>
+169        </activity>
+170
+171        <provider
+171-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:23:9-28:39
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:24:13-77
+173            android:authorities="com.example.flutter_to_do_list.firebaseinitprovider"
+173-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:25:13-72
+174            android:directBootAware="true"
+174-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:26:13-43
+175            android:exported="false"
+175-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:27:13-37
+176            android:initOrder="100" />
+176-->[com.google.firebase:firebase-common:20.4.3] /Users/apple/.gradle/caches/transforms-3/4ec606516f2193a479b44074981dbb4e/transformed/jetified-firebase-common-20.4.3/AndroidManifest.xml:28:13-36
+177
+178        <uses-library
+178-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+179            android:name="androidx.window.extensions"
+179-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+180            android:required="false" />
+180-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+181        <uses-library
+181-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+182            android:name="androidx.window.sidecar"
+182-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+183            android:required="false" />
+183-->[androidx.window:window:1.0.0-beta04] /Users/apple/.gradle/caches/transforms-3/f302e75fb7efd781bcf1a29281c188da/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+184
+185        <activity
+185-->[com.google.android.gms:play-services-base:18.0.1] /Users/apple/.gradle/caches/transforms-3/3b2d428fede6c5e3dd9018d5c02cc047/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+186            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+186-->[com.google.android.gms:play-services-base:18.0.1] /Users/apple/.gradle/caches/transforms-3/3b2d428fede6c5e3dd9018d5c02cc047/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+187            android:exported="false"
+187-->[com.google.android.gms:play-services-base:18.0.1] /Users/apple/.gradle/caches/transforms-3/3b2d428fede6c5e3dd9018d5c02cc047/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+188            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+188-->[com.google.android.gms:play-services-base:18.0.1] /Users/apple/.gradle/caches/transforms-3/3b2d428fede6c5e3dd9018d5c02cc047/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+189
+190        <meta-data
+190-->[com.google.android.gms:play-services-basement:18.3.0] /Users/apple/.gradle/caches/transforms-3/a43f60338762a20514d953a92576aa3e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+191            android:name="com.google.android.gms.version"
+191-->[com.google.android.gms:play-services-basement:18.3.0] /Users/apple/.gradle/caches/transforms-3/a43f60338762a20514d953a92576aa3e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+192            android:value="@integer/google_play_services_version" />
+192-->[com.google.android.gms:play-services-basement:18.3.0] /Users/apple/.gradle/caches/transforms-3/a43f60338762a20514d953a92576aa3e/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+193    </application>
+194
+195</manifest>
